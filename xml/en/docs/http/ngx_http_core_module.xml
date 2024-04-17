@@ -1272,7 +1272,8 @@ The “wait-read-ignore” cycle is repeated, but no longer than specified by th
     [<literal>default_server</literal>]
     [<literal>ssl</literal>]
     [<literal>http2</literal> |
-     <literal>quic</literal>]
+     <literal>quic</literal> |
+     <literal>mptcp</literal>]
     [<literal>proxy_protocol</literal>]
     [<literal>setfib</literal>=<value>number</value>]
     [<literal>fastopen</literal>=<value>number</value>]
@@ -1290,7 +1291,8 @@ The “wait-read-ignore” cycle is repeated, but no longer than specified by th
     [<literal>default_server</literal>]
     [<literal>ssl</literal>]
     [<literal>http2</literal> |
-     <literal>quic</literal>]
+     <literal>quic</literal> |
+     <literal>mptcp</literal>]
     [<literal>proxy_protocol</literal>]
     [<literal>setfib</literal>=<value>number</value>]
     [<literal>fastopen</literal>=<value>number</value>]
@@ -1308,7 +1310,8 @@ The “wait-read-ignore” cycle is repeated, but no longer than specified by th
     [<literal>default_server</literal>]
     [<literal>ssl</literal>]
     [<literal>http2</literal> |
-     <literal>quic</literal>]
+     <literal>quic</literal> |
+     <literal>mptcp</literal>]
     [<literal>proxy_protocol</literal>]
     [<literal>backlog</literal>=<value>number</value>]
     [<literal>rcvbuf</literal>=<value>size</value>]
@@ -1394,6 +1397,11 @@ should be used instead.
 <para id="quic">
 The <literal>quic</literal> parameter (1.25.0) configures the port to accept
 <link doc="ngx_http_v3_module.xml">QUIC</link> connections.
+</para>
+
+<para>
+The <literal>mptcp</literal> parameter configures a listening socket
+for working with MPTCP.
 </para>
 
 <para>

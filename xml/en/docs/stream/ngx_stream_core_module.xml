@@ -81,7 +81,8 @@ stream {
     <value>address</value>:<value>port</value>
     [<literal>default_server</literal>]
     [<literal>ssl</literal>]
-    [<literal>udp</literal>]
+    [<literal>udp</literal> |
+     <literal>mptcp</literal>]
     [<literal>proxy_protocol</literal>]
     [<literal>setfib</literal>=<value>number</value>]
     [<literal>fastopen</literal>=<value>number</value>]
@@ -150,6 +151,11 @@ for working with datagrams (1.9.13).
 In order to handle packets from the same address and port in the same session,
 the <link id="reuseport"><literal>reuseport</literal></link> parameter
 should also be specified.
+</para>
+
+<para>
+The <literal>mptcp</literal> parameter configures a listening socket
+for working with MPTCP.
 </para>
 
 <para id="proxy_protocol">

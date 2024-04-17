@@ -83,6 +83,7 @@ mail {
     [<literal>rcvbuf</literal>=<value>size</value>]
     [<literal>sndbuf</literal>=<value>size</value>]
     [<literal>bind</literal>]
+    [<literal>mptcp</literal>]
     [<literal>ipv6only</literal>=<literal>on</literal>|<literal>off</literal>]
     [<literal>so_keepalive</literal>=<literal>on</literal>|<literal>off</literal>|[<value>keepidle</value>]:[<value>keepintvl</value>]:[<value>keepcnt</value>]]</syntax>
 <default/>
@@ -226,6 +227,14 @@ For example,
 will set the idle timeout (<c-def>TCP_KEEPIDLE</c-def>) to 30 minutes,
 leave the probe interval (<c-def>TCP_KEEPINTVL</c-def>) at its system default,
 and set the probes count (<c-def>TCP_KEEPCNT</c-def>) to 10 probes.
+</tag-desc>
+
+<tag-name>
+<literal>mptcp</literal>
+</tag-name>
+<tag-desc>
+This parameter configures a listening socket
+for working with MPTCP.
 </tag-desc>
 
 </list>
